@@ -1764,3 +1764,157 @@
     background: var(--yasb-accent);
     border: 2px solid rgba(255, 255, 255, 0.9);
 }
+
+/* ===== Menu de midia: espacamento e controles no padrao dos outros menus ===== */
+.media-menu {
+    min-width: 440px;
+    max-width: 440px;
+    font-family: "Segoe UI";
+}
+.media-menu .thumbnail {
+    margin: 14px 4px 8px 14px;
+}
+.media-menu .info {
+    padding: 14px 14px 0 10px;
+}
+.media-menu .title {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 0 2px 0;
+}
+.media-menu .artist {
+    font-size: 13px;
+    color: var(--dark-dim-color);
+}
+.dark .media-menu .artist {
+    color: var(--light-dim-color);
+}
+.media-menu .source {
+    font-size: 11px;
+    color: var(--dark-dim-color);
+    padding: 2px 0;
+}
+.dark .media-menu .source {
+    color: var(--light-dim-color);
+}
+.media-menu .controls {
+    padding: 4px 0;
+}
+.media-menu .btn {
+    font-size: 18px;
+    padding: 6px 10px;
+    margin: 0 2px;
+    border-radius: 6px;
+    background: transparent;
+    border: none;
+}
+.media-menu .btn:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+    color: var(--dark-color);
+}
+.dark .media-menu .btn:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--light-color);
+}
+.media-menu .btn.play {
+    font-size: 20px;
+}
+.media-menu .app-volume-container {
+    padding: 0 0 0 8px;
+}
+.media-menu .mute-button {
+    font-family: "Segoe Fluent Icons";
+    font-size: 14px;
+    padding: 4px 6px;
+    border-radius: 4px;
+    background: transparent;
+    border: none;
+    color: var(--dark-dim-color);
+}
+.dark .media-menu .mute-button {
+    color: var(--light-dim-color);
+}
+.media-menu .mute-button:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+.dark .media-menu .mute-button:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+.media-menu .volume-slider {
+    min-width: 90px;
+    max-width: 90px;
+}
+.media-menu .media-timeline-container {
+    padding: 4px 16px 14px 16px;
+}
+.media-menu .playback-time {
+    font-size: 11px;
+    color: var(--dark-dim-color);
+}
+.dark .media-menu .playback-time {
+    color: var(--light-dim-color);
+}
+.media-menu .progress-slider::groove:horizontal,
+.media-menu .volume-slider::groove:horizontal {
+    height: 4px;
+    border-radius: 2px;
+    background: rgba(128, 128, 128, 0.4);
+}
+.media-menu .progress-slider::sub-page:horizontal,
+.media-menu .volume-slider::sub-page:horizontal {
+    height: 4px;
+    border-radius: 2px;
+    background: var(--yasb-accent);
+}
+.media-menu .progress-slider::add-page:horizontal,
+.media-menu .volume-slider::add-page:horizontal {
+    height: 4px;
+    border-radius: 2px;
+    background: rgba(128, 128, 128, 0.4);
+}
+.media-menu .progress-slider::handle:horizontal,
+.media-menu .volume-slider::handle:horizontal {
+    width: 12px;
+    height: 12px;
+    margin: -4px 0;
+    border-radius: 6px;
+    background: var(--yasb-accent);
+    border: 2px solid rgba(255, 255, 255, 0.9);
+}
+.media-menu .app-volume-container {
+    padding: 14px 16px 0 8px;
+}
+.media-menu .thumbnail {
+    margin: 12px 2px 6px 12px;
+}
+
+/* Controles de midia na barra: icones preenchidos, tamanho uniforme e hover */
+.media-widget .btn {
+    font-size: 11px;
+    padding: 2px 5px 3px 5px;
+    margin: 0 1px;
+    border-radius: 4px;
+    background: transparent;
+}
+.media-widget .btn.play {
+    font-size: 12px;
+}
+.media-widget .btn:hover {
+    color: var(--dark-icon-color);
+    background-color: rgba(0, 0, 0, 0.08);
+}
+.yasb-bar.dark .media-widget .btn:hover {
+    color: var(--light-icon-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+/* Midia: alinha artista com o titulo */
+.media-menu .artist {
+    padding-left: 1px;
+}
+/* Midia: titulo e artista alinhados ao topo da capa */
+.media-menu .info {
+    padding-top: 20px;
+}
+.media-menu .title {
+    padding-top: 8px;
+}
