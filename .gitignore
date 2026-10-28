@@ -1,0 +1,11 @@
+# Gerados pelo YASB / em tempo de execucao
+yasb.log
+*.log
+
+# Avatar e gerado a partir da foto da conta do Windows (scripts/update-avatar.ps1)
+assets/avatar.png
+assets/avatar.source
+
+# Backups locais
+temas/
+*.bak
