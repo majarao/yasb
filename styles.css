@@ -2045,3 +2045,42 @@
 .clock-popup.calendar {
     min-width: 620px;
 }
+
+/* ===== Calendario: lista de feriados ===== */
+.clock-popup.calendar .upcoming-events-header {
+    min-width: 170px;
+    max-width: 170px;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--dark-dim-color);
+}
+.dark .clock-popup.calendar .upcoming-events-header {
+    color: var(--light-dim-color);
+}
+.clock-popup.calendar .upcoming-events-item {
+    min-width: 170px;
+    max-width: 170px;
+    margin-bottom: 6px;
+    padding: 6px 10px;
+    font-size: 13px;
+    color: var(--dark-color);
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+.dark .clock-popup.calendar .upcoming-events-item {
+    color: var(--light-color);
+    background-color: rgba(255, 255, 255, 0.06);
+}
+.clock-popup.calendar .holiday-label {
+    min-width: 170px;
+    max-width: 170px;
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--yasb-accent);
+}
+.dark .clock-popup.calendar .holiday-label {
+    color: var(--yasb-accent-light2);
+}

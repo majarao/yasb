@@ -83,22 +83,23 @@ widgets:
   clock:
     type: "yasb.clock.ClockWidget"
     options:
-      label: "{%a, %d %b %H:%M}"
+      label: "{%A, %d de %B de %Y  %H:%M}"
       locale: "pt_BR"
-      label_alt: "{%A, %d %B %Y %H:%M}"
       timezones: []
       calendar: 
         blur: true
         round_corners: true
         alignment: "center"
         direction: "down"
-        extended: false
+        extended: true
         show_years: true
-        show_holidays: false
+        show_holidays: true
+        country_code: "BR"
+        subdivision: "SP"
         show_week_numbers: false
       callbacks:
         on_left: "toggle_calendar"
-        on_middle: "toggle_label"
+        on_middle: "do_nothing"
         on_right: "context_menu"
   cpu:
     type: "yasb.cpu.CpuWidget"
