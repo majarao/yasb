@@ -1918,3 +1918,130 @@
 .media-menu .title {
     padding-top: 8px;
 }
+
+/* ===== Calendario: visual no padrao do Windows 11 ===== */
+.clock-popup.calendar {
+    min-width: 470px;
+    font-family: "Segoe UI";
+}
+.clock-popup.calendar .day-label,
+.clock-popup.calendar .month-label,
+.clock-popup.calendar .year-label,
+.clock-popup.calendar .date-label {
+    min-width: 170px;
+    max-width: 170px;
+    color: var(--dark-color);
+}
+.dark .clock-popup.calendar .day-label,
+.dark .clock-popup.calendar .month-label,
+.dark .clock-popup.calendar .year-label,
+.dark .clock-popup.calendar .date-label {
+    color: var(--light-color);
+}
+.clock-popup.calendar .day-label {
+    margin-top: 24px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--dark-dim-color);
+}
+.dark .clock-popup.calendar .day-label {
+    color: var(--light-dim-color);
+}
+.clock-popup.calendar .date-label {
+    font-size: 64px;
+    font-weight: 600;
+    margin-top: -6px;
+    color: var(--yasb-accent);
+}
+.dark .clock-popup.calendar .date-label {
+    color: var(--yasb-accent-light2);
+}
+.clock-popup.calendar .month-label {
+    font-size: 16px;
+    font-weight: 600;
+}
+.clock-popup.calendar .year-label {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--dark-dim-color);
+}
+.dark .clock-popup.calendar .year-label {
+    color: var(--light-dim-color);
+}
+.clock-popup.calendar .calendar-table,
+.clock-popup.calendar .calendar-table::item {
+    font-size: 13px;
+    color: var(--dark-color);
+}
+.dark .clock-popup.calendar .calendar-table,
+.dark .clock-popup.calendar .calendar-table::item {
+    color: var(--light-color);
+}
+.clock-popup.calendar .calendar-table {
+    margin: 12px 14px 12px 4px;
+}
+.clock-popup.calendar .calendar-table::item:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+}
+.dark .clock-popup.calendar .calendar-table::item:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+.clock-popup.calendar .calendar-table::item:selected,
+.dark .clock-popup.calendar .calendar-table::item:selected {
+    color: #ffffff;
+    font-weight: 600;
+    background-color: var(--yasb-accent);
+    border-radius: 14px;
+}
+/* Calendario: restaura a linha dos dias da semana (sem margem/fonte maior) */
+.clock-popup.calendar .calendar-table {
+    margin: 0;
+}
+.clock-popup.calendar .calendar-table,
+.clock-popup.calendar .calendar-table::item {
+    font-size: 12px;
+}
+.clock-popup.calendar .calendar-table::item:selected,
+.dark .clock-popup.calendar .calendar-table::item:selected,
+.clock-popup.calendar .calendar-table::item:hover,
+.dark .clock-popup.calendar .calendar-table::item:hover {
+    border-radius: 9px;
+}
+/* Calendario maior */
+.clock-popup.calendar {
+    min-width: 560px;
+}
+.clock-popup.calendar .calendar-table,
+.clock-popup.calendar .calendar-table::item {
+    font-size: 15px;
+}
+.clock-popup.calendar .day-label,
+.clock-popup.calendar .month-label,
+.clock-popup.calendar .year-label,
+.clock-popup.calendar .date-label {
+    min-width: 200px;
+    max-width: 200px;
+}
+.clock-popup.calendar .day-label {
+    font-size: 15px;
+}
+.clock-popup.calendar .month-label {
+    font-size: 20px;
+}
+.clock-popup.calendar .year-label {
+    font-size: 15px;
+}
+.clock-popup.calendar .date-label {
+    font-size: 80px;
+}
+.clock-popup.calendar .calendar-table::item:selected,
+.dark .clock-popup.calendar .calendar-table::item:selected,
+.clock-popup.calendar .calendar-table::item:hover,
+.dark .clock-popup.calendar .calendar-table::item:hover {
+    border-radius: 12px;
+}
+/* Calendario: popup mais largo para espacar as colunas */
+.clock-popup.calendar {
+    min-width: 620px;
+}
