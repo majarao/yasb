@@ -5,7 +5,7 @@ update_check: true
 bars:
   primary-bar:
     enabled: true
-    screens: ["primary"]
+    screens: ["*"]
     class_name: "yasb-bar"
     alignment:
       position: "top"
@@ -44,7 +44,6 @@ bars:
       - "cpu"
       - "temp_cpu"
       - "wifi"
-      - "traffic"
       - "battery"
       - "power_menu"
       - "avatar_sync"
@@ -233,29 +232,6 @@ widgets:
         run_cmd: "powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:/Users/majarao/.config/yasb/scripts/update-avatar.ps1"
         run_once: true
         return_format: "string"
-  traffic:
-    type: "yasb.traffic.TrafficWidget"
-    options:
-      label: "<span>\ue74b</span>{download_speed} <span class='icon upload-icon'>\ue74a</span>{upload_speed}"
-      label_alt: "<span>\ue74b</span>{download_speed} <span class='icon upload-icon'>\ue74a</span>{upload_speed}"
-      update_interval: 1000
-      speed_unit: "bytes"
-      hide_decimal: true
-      menu:
-        blur: true
-        round_corners: true
-        round_corners_type: "normal"
-        border_color: "System"
-        alignment: "right"
-        direction: "down"
-        offset_top: 6
-        offset_left: 0
-        show_interface_name: true
-        show_internet_info: true
-      callbacks:
-        on_left: "toggle_menu"
-        on_middle: "do_nothing"
-        on_right: "do_nothing"
   bluetooth:
     type: "yasb.bluetooth.BluetoothWidget"
     options:

@@ -8,7 +8,7 @@ Configuração pessoal do [YASB Reborn](https://github.com/amnweb/yasb) (testada
 |---|---|
 | Esquerda | Quick launch (`Alt+Espaço`), player de mídia, janela ativa |
 | Centro | Relógio e calendário (pt-BR) |
-| Direita | Volume, microfone, Bluetooth, RAM, CPU, temperatura da CPU, conexão (cabo/Wi-Fi), velocidade de rede, bateria, foto do usuário (menu de energia) |
+| Direita | Volume, microfone, Bluetooth, RAM, CPU, temperatura da CPU, conexão (cabo/Wi-Fi), bateria, foto do usuário (menu de energia) |
 
 Os cliques do botão direito que trocam a visão dos widgets foram desativados. O clique esquerdo abre o menu de cada indicador, e na bateria abre as configurações de energia do Windows.
 
@@ -82,6 +82,6 @@ O Windhawk inicia com o Windows. Para desfazer, basta desativar o mod.
 
 ## Observações
 
-- Os textos que o YASB permite configurar estão em português. Alguns menus (rede, Wi-Fi, CPU e RAM) têm textos fixos em inglês no código do YASB e não dá para traduzir pela configuração.
+- Os textos que o YASB permite configurar estão em português. Alguns menus (Wi-Fi, CPU e RAM) têm textos fixos em inglês no código do YASB e não dá para traduzir pela configuração.
 - A barra fica atrás de jogos em tela cheia (`always_on_top: false`).
 - Depois de editar `config.yaml` ou `styles.css`, o YASB recarrega sozinho. Para forçar, rode `yasbc reload`.

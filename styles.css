@@ -1180,27 +1180,23 @@
     border: none;
 }
 
-/* ===== Menus de rede, temperatura, Bluetooth e microfone (mesmo padrao do menu de memoria) ===== */
-.traffic-menu,
+/* ===== Menus de temperatura, Bluetooth e microfone (mesmo padrao do menu de memoria) ===== */
 .libre-menu,
 .bluetooth-menu,
 .microphone-menu {
     background-color: var(--light-menu-bg);
     font-family: "Segoe UI";
 }
-.dark .traffic-menu,
 .dark .libre-menu,
 .dark .bluetooth-menu,
 .dark .microphone-menu {
     background-color: var(--dark-menu-bg);
 }
-.traffic-menu { min-width: 340px; max-width: 340px; }
 .libre-menu { min-width: 300px; max-width: 300px; }
 .bluetooth-menu { min-width: 360px; max-width: 360px; }
 .microphone-menu { min-width: 320px; max-width: 320px; }
 
 /* Cabecalhos */
-.traffic-menu .header,
 .libre-menu .header,
 .bluetooth-menu .header {
     background: transparent;
@@ -1209,22 +1205,18 @@
     font-family: "Segoe UI";
     color: var(--dark-color);
 }
-.traffic-menu .header .title,
 .bluetooth-menu .header .title {
     font-size: 16px;
     font-family: "Segoe UI";
     color: var(--dark-color);
 }
-.dark .traffic-menu .header,
 .dark .libre-menu .header,
 .dark .bluetooth-menu .header,
-.dark .traffic-menu .header .title,
 .dark .bluetooth-menu .header .title {
     color: var(--light-color);
 }
 
-/* Botoes (Reset, Ligado, configuracoes, buscar) */
-.traffic-menu .reset-button,
+/* Botoes (Ligado, configuracoes, buscar) */
 .bluetooth-menu .power-button,
 .bluetooth-menu .settings-button,
 .bluetooth-menu .scan-icon {
@@ -1239,7 +1231,6 @@
 .bluetooth-menu .scan-icon {
     font-family: "Segoe Fluent Icons";
 }
-.dark .traffic-menu .reset-button,
 .dark .bluetooth-menu .power-button,
 .dark .bluetooth-menu .settings-button,
 .dark .bluetooth-menu .scan-icon {
@@ -1247,12 +1238,10 @@
     background-color: rgba(255, 255, 255, 0.06);
     color: var(--light-color);
 }
-.traffic-menu .reset-button:hover,
 .bluetooth-menu .settings-button:hover,
 .bluetooth-menu .scan-icon:hover {
     background-color: rgba(0, 0, 0, 0.06);
 }
-.dark .traffic-menu .reset-button:hover,
 .dark .bluetooth-menu .settings-button:hover,
 .dark .bluetooth-menu .scan-icon:hover {
     background-color: rgba(255, 255, 255, 0.1);
@@ -1264,10 +1253,7 @@
     color: #ffffff;
 }
 
-/* Cartoes (velocidades, secoes, sensores, dispositivos) */
-.traffic-menu .download-speed,
-.traffic-menu .upload-speed,
-.traffic-menu .section,
+/* Cartoes (sensores, dispositivos) */
 .libre-menu .sensor-item,
 .bluetooth-menu .bluetooth-item,
 .microphone-menu .device,
@@ -1278,9 +1264,6 @@
     padding: 8px 12px;
     margin: 4px 12px;
 }
-.dark .traffic-menu .download-speed,
-.dark .traffic-menu .upload-speed,
-.dark .traffic-menu .section,
 .dark .libre-menu .sensor-item,
 .dark .bluetooth-menu .bluetooth-item,
 .dark .microphone-menu .device,
@@ -1301,43 +1284,7 @@
     border: 1px solid var(--yasb-accent);
 }
 
-/* Rede: velocidades grandes, como os valores do menu de memoria */
-.traffic-menu .speed-value,
-.traffic-menu .download-speed-value,
-.traffic-menu .upload-speed-value {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--dark-color);
-}
-.dark .traffic-menu .speed-value,
-.dark .traffic-menu .download-speed-value,
-.dark .traffic-menu .upload-speed-value {
-    color: var(--light-color);
-}
-.traffic-menu .speed-unit,
-.traffic-menu .download-speed-unit,
-.traffic-menu .upload-speed-unit,
-.traffic-menu .download-speed-placeholder,
-.traffic-menu .upload-speed-placeholder,
-.traffic-menu .speed-placeholder {
-    font-size: 12px;
-    color: var(--dark-dim-color);
-}
-.dark .traffic-menu .speed-unit,
-.dark .traffic-menu .download-speed-unit,
-.dark .traffic-menu .upload-speed-unit,
-.dark .traffic-menu .download-speed-placeholder,
-.dark .traffic-menu .upload-speed-placeholder,
-.dark .traffic-menu .speed-placeholder {
-    color: var(--light-dim-color);
-}
-.traffic-menu .speed-separator {
-    max-width: 0;
-    background: transparent;
-}
-
 /* Titulos de secao e textos secundarios */
-.traffic-menu .section-title,
 .bluetooth-menu .section-title {
     font-size: 13px;
     font-weight: 600;
@@ -1347,13 +1294,9 @@
 .bluetooth-menu .section-title {
     padding: 8px 16px 4px 16px;
 }
-.dark .traffic-menu .section-title,
 .dark .bluetooth-menu .section-title {
     color: var(--light-color);
 }
-.traffic-menu .data-text,
-.traffic-menu .interface-info,
-.traffic-menu .internet-info,
 .libre-menu .sensor-name,
 .bluetooth-menu .status,
 .microphone-menu .no-device {
@@ -1361,22 +1304,11 @@
     color: var(--dark-dim-color);
     padding: 2px 4px;
 }
-.dark .traffic-menu .data-text,
-.dark .traffic-menu .interface-info,
-.dark .traffic-menu .internet-info,
 .dark .libre-menu .sensor-name,
 .dark .bluetooth-menu .status,
 .dark .microphone-menu .no-device {
     color: var(--light-dim-color);
 }
-.traffic-menu .interface-info,
-.traffic-menu .internet-info {
-    padding: 4px 16px;
-}
-.traffic-menu .internet-info {
-    padding-bottom: 12px;
-}
-.traffic-menu .data-value,
 .libre-menu .sensor-value,
 .bluetooth-menu .name {
     font-size: 13px;
@@ -1384,7 +1316,6 @@
     color: var(--dark-color);
     padding: 2px 4px;
 }
-.dark .traffic-menu .data-value,
 .dark .libre-menu .sensor-value,
 .dark .bluetooth-menu .name {
     color: var(--light-color);
@@ -1445,14 +1376,6 @@
 }
 
 /* Ajustes finos dos menus */
-.traffic-menu .title,
-.traffic-menu .header .title {
-    padding: 8px 4px 4px 16px;
-    font-size: 16px;
-}
-.traffic-menu .reset-button {
-    margin: 10px 12px 0 0;
-}
 .libre-menu { min-width: 340px; max-width: 340px; }
 .bluetooth-menu .bluetooth-item {
     margin: 2px 8px;
@@ -1536,11 +1459,6 @@
 .bluetooth-menu QScrollArea,
 .bluetooth-menu QAbstractScrollArea {
     min-height: 260px;
-}
-
-/* Rede: espaco entre download e upload na barra */
-.traffic-widget .upload-icon {
-    padding-left: 10px;
 }
 
 /* ===== Menu Wi-Fi (mesmo padrao do Bluetooth) ===== */
